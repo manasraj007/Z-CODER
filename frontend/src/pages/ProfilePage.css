@@ -1,0 +1,70 @@
+/* ProfilePage.css */
+
+.profile-page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding-top: 45px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+  }
+  
+  .profile-header h2 {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  
+  .profile-header p {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .profile-details h3 {
+    font-size: 1.75rem;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .platforms {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .platform {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .platform h4 {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .platform p {
+    font-size: 1rem;
+    color: #495057;
+    margin: 5px 0;
+  }
+  
+  .platform:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  

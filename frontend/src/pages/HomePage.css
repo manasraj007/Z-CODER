@@ -1,0 +1,134 @@
+/* HomePage.css */
+
+/* Hero section styles */
+.home-page{
+  padding-bottom: 78px;
+
+}
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?coding');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding-bottom: 45px;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color:#fff;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Features section styles */
+.features-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: black;
+}
+
+
+
+/* Call-to-action section styles */
+.cta-section {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta-button {
+  padding: 15px 60px;
+  font-size: 25px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: scale(1.05);
+}

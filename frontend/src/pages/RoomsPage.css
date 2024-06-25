@@ -1,0 +1,76 @@
+.rooms-page {
+    padding: 20px;
+    padding-top: 45px;
+  }
+  
+  .rooms-selection {
+    text-align: center;
+    color: white;
+  }
+  
+  .rooms-selection input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .rooms-selection button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rooms-selection button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rooms-selection ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rooms-selection li {
+    margin: 10px 0;
+  }
+  
+  .chat-room {
+    text-align: center;
+  }
+  
+  .chat-room .messages {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chat-room .message {
+    margin: 10px 0;
+  }
+  
+  .chat-room input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chat-room button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-room button:hover {
+    background-color: #0056b3;
+  }
+  
