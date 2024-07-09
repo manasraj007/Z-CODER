@@ -20,7 +20,6 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<LoginPage />} /> 
-            {/* <Route path="/login" element={<LoginPage />} />  */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/Questions" element={<QuestionPage />} />
@@ -34,16 +33,16 @@ function App() {
     </Router>
   );
 }
-function ConditionalHeaderFooter({ children }) {
+function ConditionalHeaderFooter() {
   const location = useLocation();
-  const noHeaderFooterPaths = ['/','/login'];
+  const noHeaderFooterPaths = ['/'];
+  if(noHeaderFooterPaths.includes(location.pathname)){
+    return null;
+  }
 
   return (
     <>
-      {!noHeaderFooterPaths.includes(location.pathname)}
       <Header/>
-      <main className="main-content">{children}</main>
-      {!noHeaderFooterPaths.includes(location.pathname)}
       <Footer/>
     </>
   );

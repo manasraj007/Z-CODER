@@ -17,6 +17,7 @@ function Header() {
         <Link to="/contests" className={`nav-link ${location.pathname === '/contests' ? 'active' : ''}`}>Calender</Link>
         <Link to="/rooms" className={`nav-link ${location.pathname === '/rooms' ? 'active' : ''}`}>Rooms</Link>
         <Link to="/code-editor" className={`nav-link ${location.pathname === '/code-editor' ? 'active' : ''}`}>Code Editor</Link>
+        <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Logout</Link>
       </nav>
     </header>
   );
