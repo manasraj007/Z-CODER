@@ -1,51 +1,44 @@
-// App.js
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route , useLocation} from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProfilePage from './pages/ProfilePage';
-import QuestionPage from './pages/QuestionsPage';
-import ContestsPage from './pages/ContestsPage';
-import RoomsPage from './pages/RoomsPage';
-import CodeEditorPage from './pages/CodeEditor';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import LoginPage from './pages/LoginPage';
-
+import ChatRoom from "./pages/Room/ChatRoomPage.js";
+import Calender from "./pages/Calender/CalanderPage.js";
+import CodeEditor from "./pages/Codeeditor/CodeEditorPage.js";
+import ForgotPassword from "./pages/Auth/ForgotPasswordPage.js";
+import HomePage from "./pages/Home/HomePage.js";
+import LogIn from "./pages/Auth/LoginPage.js";
+import SignUp from "./pages/Auth/SignUpPage.js";
+import DashBoard from "./pages/Profile/Dashboard.js";
+import Logout from "./pages/Auth/logout.js";
+import Profile from "./pages/Profile/ProfilePage.js";
+import Fetch from "./pages/Codeeditor/Fetch.js";
+import { BrowserRouter , Routes , Route} from "react-router-dom";
+import Question from "./pages/Question/Questions.js";
+import Comments from "./pages/Question/Commnets.js";
+import ResetPassword from "./pages/Auth/ResetPassword.js";
+import AccVerify from "./pages/Auth/AccVerify.js";
+import AccEdit from "./pages/Profile/AccEditPage.js";
 function App() {
-  return (
-    <Router>
-      <div className="app">
-        <ConditionalHeaderFooter />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<LoginPage />} /> 
-            <Route path="/home" element={<HomePage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/Questions" element={<QuestionPage />} />
-            <Route path="/contests" element={<ContestsPage />} />
-            <Route path="/rooms" element={<RoomsPage />} />
-            <Route path="/code-editor" element={<CodeEditorPage />} />
-          </Routes>
-        </main>
-        <ConditionalHeaderFooter />
-      </div>
-    </Router>
-  );
-}
-function ConditionalHeaderFooter() {
-  const location = useLocation();
-  const noHeaderFooterPaths = ['/'];
-  if(noHeaderFooterPaths.includes(location.pathname)){
-    return null;
-  }
-
-  return (
-    <>
-      <Header/>
-      <Footer/>
-    </>
-  );
+  return(<>
+    <BrowserRouter>
+    <Routes>
+        <Route exact path="/" element={<HomePage/>}/>
+        <Route exact path="/LogIn" element={<LogIn/>}/>
+        <Route exact path="/ForgotPassword" element={<ForgotPassword/>}/>
+        <Route exact path="/ForgotPassword/ResetPassword" element={<ResetPassword/>}/>
+        <Route exact path="/SignUp" element={<SignUp/>}/>
+        <Route exact path="/LogIn/:id/ChatRoom" element={<ChatRoom/>}/>
+        <Route exact path='/CodeEditor' element={<CodeEditor/>}/>
+        <Route exact path="/LogIn/:id/Calender" element={<Calender/>}/>
+        <Route exact path="/LogIn/:id" element={<DashBoard/>}/>
+        <Route exact path="/LogIn/:id/:qid" element={<Question/>}/>
+        <Route exact path="/LogIn/:id/:qid/Comments" element={<Comments/>}/>
+        <Route exact path="/LogIn/:id/PublishQuestion" element={<Fetch/>}/>
+        <Route exact path="/LogIn/:id/Calender" element={<DashBoard/>}/>
+        <Route exact path="/LogIn/:id/LogOut" element={<Logout/>}/>
+        <Route exact path="/LogIn/:id/Profile" element={<Profile/>}/>
+        <Route exact path="/LogIn/:id/Profile/AccEdit" element={<AccEdit/>}/>
+        <Route exact path="/LogIn/:id/Profile/AccVerify" element={<AccVerify/>}/>
+    </Routes>
+    </BrowserRouter>
+  </>)
 }
 
 export default App;

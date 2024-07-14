@@ -2,6 +2,8 @@
 
 import React from 'react'; 
 import './HomePage.css';
+import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //import LoginPage from './LoginPage';
 
@@ -17,10 +19,10 @@ const HomePage = () => {
       <div className="hero-section">
         <h2>Level Up Your Coding Skills with ZCoder</h2>
         <p>Collaborate, Learn, and Build Your Coding Community.</p>
-        {/* <div className="cta-buttons"> */}
-          {/* <Link to="/login" className="cta-button">Create a Profile</Link> */}
-          {/* <button className="cta-button">Explore Challenges</button> */}
-        {/* </div> */}
+         <div className="cta-buttons"> 
+           <Link to="/LogIn" className="cta-button">Create a Profile</Link> 
+           {/* <button className="cta-button">Explore Challenges</button>  */}
+         </div> 
       </div>
       {/* {showLoginPage && <LoginPage />} */}
       <div className="features-section">

@@ -1,13 +1,10 @@
 import mongoose from 'mongoose'
 import { configDotenv } from 'dotenv'
 configDotenv();
-const URL=process.env.MONGO_URI
+const URL=process.env.DB
 const  connection = async () =>{
     try{
-         await mongoose.connect(URL,{
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-         });
+         await mongoose.connect(URL,{});
          console.log("we rolling database connected");
     }catch(error){
         console.log(error.message);

@@ -1,0 +1,34 @@
+.lang-selector-wrapper{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang-selector-wrapper-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lang-btn{
+  padding: 5px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.result-btn-wrapper{
+  padding: 20px
+}
+.result-btn-wrapper button{
+  padding: 8px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  background-color: #FF786B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.code-space{
+  margin: 0px 0px 0px 20px;
+  display: flex;
+}

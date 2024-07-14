@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.chat-outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 20px;
+  height: 70vh;
+}
+
+.chat-wrapper {
+  height:69vh;
+  overflow-y: scroll;
+  margin:5px 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.user-msg {
+  margin-bottom: 10px;
+}
+
+.system-msg {
+  color: gray;
+  text-align: center;
+}
+

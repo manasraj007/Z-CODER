@@ -6,7 +6,7 @@
 
 }
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?coding');
+  background-image: url(/Users/manasrajhans/Downloads/zcoder.jpeg);
   background-size: cover;
   background-position: center;
   color: #ffffff;
