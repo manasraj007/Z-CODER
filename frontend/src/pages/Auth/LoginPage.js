@@ -6,9 +6,9 @@ import axios from 'axios'
 import Navbar1 from "../../components/Navbar1.js";
 
 function LogIn(){
-    const [username , setUsername]=useState('');
-    const [password , setPassword]=useState('');
-    const [errorCase , setErrorCase] = useState('');
+    const [username , setUsername]=useState();
+    const [password , setPassword]=useState();
+    const [errorCase , setErrorCase] = useState();
     const navigate = useNavigate()
 
     const handleLogin=async ()=>{
