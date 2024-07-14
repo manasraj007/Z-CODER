@@ -1,8 +1,9 @@
-import Navbar1 from "../../components/Navbar1.js";
+
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
+import Navbar1 from "../../components/Navbar1.js";
 
 function LogIn(){
     const [username , setUsername]=useState('');
